@@ -1,2 +1,2 @@
 # Spotify-Clone
-I try build the appearance of Spotify using only HTML and CSS 
+I tried to build the appearance of Spotify using only HTML and CSS 
