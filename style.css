@@ -1,0 +1,566 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin; /* Options: auto | thin | none */
+    scrollbar-color: #555 #121212; /* thumb color, track color */
+}
+
+body {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0.5rem;
+    background-color: black;
+}
+.nav_bar {
+    height: 4rem;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 31rem;
+    padding: 0.5rem 0;
+}
+
+.side_pannel {
+    height: 100%;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    background-color: #121212;
+    padding: 0 0.5rem;
+}
+
+.main_content {
+    height: 100%;
+    margin-left: 0.5rem;
+    flex: 1;
+    overflow: auto;
+    border-radius: 0.5rem;
+    background: linear-gradient(#212121, #121212);
+    padding: 0 20px;
+}
+
+.foot_bar {
+    flex: 1;
+    background-color: #121212;
+}
+
+.nav_bar1 {
+    border-right: 1px solid #fff ;
+    height: 95%;
+    display: flex;
+    align-items: center;  
+    padding-right: 1rem;
+} 
+
+.logo{
+    height: 3rem;
+    width: 3rem;
+    margin: 0 2rem;
+}
+
+.nav_icons{
+    height: 70%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-right: 2rem;
+}
+
+.nav_icons i{
+    height: 3.25rem;
+    width: 3.25rem;
+    display: grid;
+    place-items: center;
+    font-size: 1.75rem;
+    color: #fff;
+    background-color: #212121;
+    border-radius: 50%;
+    opacity: 0.7;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.nav_icons i:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.nav_icons input{
+    border: none;
+    height: 3rem;
+    width: 20rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #212121;
+    color: #fff;
+    border-radius: 2rem;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: o.5s ease-in-out;
+}
+
+.nav_icons input::placeholder{
+    color: #fff;
+    opacity: 0.7;
+}
+
+.nav_icons input:hover{
+    opacity: 1;
+}
+
+.nav_icons a{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.15rem;
+    opacity: 0.7;
+    transition: 0.2s ease-in-out;
+    /* padding: 0 1rem; */
+}
+
+.nav_icons a:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@media (max-width: 1300px) {
+    .nav_icons input {
+        display: none;
+    }
+}
+
+.nav_bar2 {
+    height: 95%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+}
+
+
+.nav_bar2 .nav_icons button{
+    height: 3.25rem;
+    width: 6.25rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.nav_bar2 .nav_icons button:hover{
+    opacity: 0.8;
+    font-size: 22px;
+}
+
+.nav_bar2 .nav_icons a:first-child i{
+    background-color: white;
+    color: black;
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+}
+
+.nav_bar2 .nav_icons{
+    border: none;
+}
+
+.lib{
+    height: 76px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.lib a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.lib a img {
+    height: 1.75rem;
+    width: 1.75rem;
+    margin-right: 0.75rem;
+}
+
+.lib a:hover{
+    opacity: 1;
+}
+
+.lib i {
+    color: #fff;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    display: grid;
+    place-items: center;
+    transition: 0.2s ease-in-out;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.lib i:hover{
+    opacity: 1;
+    background-color: #212121;
+}
+
+.side_boxes {
+    height: 191px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    overflow: hidden;
+    
+}
+
+.side_boxes:hover{
+    overflow: auto;
+}
+
+.side_foot {
+    position: sticky;
+    bottom: 0;
+    flex: 1;
+    padding: 14px 16px;
+    border-radius: 0 0 0.5rem 0.5rem;
+    color: white;
+}
+
+.side_boxes .box{
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    background-color: #212121;
+}
+
+.box h4{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.box p{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 2;
+
+}
+
+.box button{
+    height: 32px;
+    width: 150px;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 650;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    color: #000000cc;
+    margin-top: 1rem;
+}
+
+.box button:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.side_foot .line{
+    font-size: 10px;
+    display: flex;
+    gap: 1rem;
+    color: rgba(255, 255, 255, 0.623);
+    margin-top: 0.75rem;
+}
+
+.side_foot .word:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.side_foot p{
+    margin-top: 0.75rem;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.side_foot p:hover{
+    text-decoration: underline;
+}
+
+.side_foot button{
+    border: 1px solid #fff;
+    height: 32px;
+    width: 105px;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 650;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    color: #000000cc;
+    margin-top: 1.75rem;
+    background: transparent;
+    color: white;
+}
+
+.side_foot button i {
+    margin-right: 0.5rem;
+}
+
+.side_foot button:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.heading {
+    height: 3.5rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items:end;
+}
+
+.heading h1 {
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.heading h1:hover {
+    text-decoration: underline;
+}
+
+.heading a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.623);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.heading a:hover {
+    text-decoration: underline;
+}
+
+.artist_cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.artist_card {
+    position: relative;
+    flex: 1;
+    min-height: 230px;
+    min-width: 175px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 0.75rem;
+}
+
+.artist_card:hover {
+    background-color: #212121;
+}
+
+.artist_card img {
+    width: 152px;
+    height: 152px;
+    margin-left: 50%;
+    display: block;
+    transform: translateX(-50%);
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.artist_card h3 {
+    font-size: 16px;
+    margin-top: 1rem;
+    color: #fff;
+    font-weight: 400; 
+}
+
+.artist_card h3:hover {
+    text-decoration: underline;
+}
+
+.artist_card p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.623);
+    font-weight: 400;
+}
+
+/* Button styles */
+.artist_card button {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #1db954; /* Spotify green */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Show button on hover */
+.artist_card:hover button{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Icon styling */
+.artist_card button i {
+    font-size: 24px;
+}
+
+
+.policy {
+    margin-top: 2rem;
+    height: 400px;
+    color: #fff;
+}
+
+.policy_top {
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1px solid #555 ;
+    padding: 2rem 0;
+    padding-left: 1rem;
+}
+
+.lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.lists li {
+    list-style-type: none;
+    line-height: 2rem;
+}
+
+.lists li:first-child a{
+    font-weight: 700;
+    color: #fff;
+    cursor: default;
+    letter-spacing: 0.5px;
+}
+
+.lists li:first-child a:hover {
+    text-decoration: none;
+}
+
+.lists a{
+    
+    color: rgba(255, 255, 255, 0.623);
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.lists a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.social i{
+    opacity: 0.7;
+    height: 40px;
+    width: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: #555;
+    cursor: pointer;
+}
+
+.social i:hover{
+    opacity: 1;
+}
+
+.policy_foot p{
+    color: rgba(255, 255, 255, 0.623);
+    font-size: 14px;
+    margin-top: 3rem;
+}
+
+.foot_bar {
+    background-image: linear-gradient(90deg, #af2896, #509bf5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    color: white;
+}
+
+.foot_bar .left_content h5 {
+    letter-spacing: 0.5px;
+}
+
+.foot_bar .left_content p {
+    font-size: 1rem;
+}
+
+.foot_bar button {
+    border: none;
+    height: 3rem;
+    width: 10rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-right: 1rem;
+}
+
+.foot_bar button:hover {
+    transform: scale(1.02);
+}
